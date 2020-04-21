@@ -219,6 +219,10 @@ module Motion::Project
       @use_frameworks = flag
       @podfile.use_frameworks!(flag)
     end
+    
+    def current_target_definition
+      @podfile.current_target_definition
+    end
 
     # Installation
     #-------------------------------------------------------------------------#
