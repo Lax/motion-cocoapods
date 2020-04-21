@@ -221,7 +221,7 @@ module Motion::Project
     end
     
     def current_target_definition
-      @podfile.current_target_definition
+      @podfile.send :current_target_definition
     end
 
     # Installation
